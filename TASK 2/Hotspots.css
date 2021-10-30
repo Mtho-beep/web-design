@@ -1,0 +1,253 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url(images/background.png);
+  background-attachment: fixed;
+  
+}
+.nav li {
+  display: inline;
+  color: white;
+}
+.container{
+  width: 100%;
+  height: 100vh;
+}
+.nav li a{
+    width: 100px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    position: relative;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    left: -10%;
+    text-decoration: none;
+    padding: 10px;
+}
+li a:hover{
+    background: rgb(255, 255, 255);
+    
+}
+.nav {
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    padding: 0px 100px;
+    position: relative;
+    z-index: 1;
+    left: 50%;
+
+    
+}
+.nav ul{
+    float: right;
+}
+.tittle{
+  font-size: 50px;
+  line-height: 100px;
+  font-weight: bold;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  top: 35%;
+  left: 20%;
+}
+.content p{
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+}
+.slider{
+  color: white;
+  margin-left: 12px;
+  box-sizing: border-box;
+  animation: slider 6s linear infinite;
+}
+@keyframes slider{
+  0%{margin-top: -400px;}
+  5%{margin-top: -200px;}
+  30%{margin-top: -200px;}
+  35%{margin-top:   0px;}
+  65%{margin-top: 0px;}
+  70%{margin-top: 200px;}
+  100%{margin-top: 200px;}
+
+}
+.slider-frame{
+  position: absolute;
+  left: 30%;
+  top: 70%;
+  height: 400px;
+  overflow: hidden;
+  width: 1200px;
+
+}
+@-webkit-keyframes slide_animation{
+  0%{left: 0px;}
+  10%{left: 0px;}
+  20%{left: 1200px;}
+  30%{left: 1200px;}
+  40%{left: 2400px;}
+  50%{left: 2400px;}
+  60%{left: 1200px;}
+  70%{left: 1200px;}
+  80%{left: 0px;}
+  90%{left: 0px;}
+  100%{left: 0px;}
+}
+.slide-images{
+  width: 3600px;
+  height: 800px;
+  margin: 0 0 0 -2400px;
+  position: relative;
+  -webkit-animation-name: slide_animation;
+  -webkit-animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-play-state: running;
+}
+.img-container{
+  height: 800px;
+  width: 1200px;
+  position: relative;
+  float: left;
+}
+
+.hero{
+  position: absolute;
+  top: 130%;
+}
+.slide-row{
+  display: flex;
+  width: 3200px;
+}
+.slide-col{
+  width: 800px;
+  height: 400px;
+  position: relative;
+}
+.user-img1 img{
+  margin: 20px;
+  float: center;
+  width: 400px;
+  
+}
+.user-img2 img{
+  margin: 20px;
+  float: center;
+  width: 400px;
+}
+.user-img3 img{
+  margin: 20px;
+  float: center;
+  width: 400px;
+}
+
+.user-text1{
+  background: rgba(255, 255, 255, 0.5);
+  width: 700px;
+  height:280px;
+  position:absolute;
+  left:55%;
+  top:40%;
+  transform:translateY(-50%);
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  padding: 45px;
+  box-sizing: border-box;
+  z-index:2;
+}
+.user-text2{
+  background: rgba(255, 255, 255, 0.5);
+  width: 700px;
+  height:250px;
+  position:absolute;
+  left:55%;
+  top:37%;
+  transform:translateY(-50%);
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  padding: 45px;
+  box-sizing: border-box;
+  z-index:2;
+}
+.user-text3{
+  background: rgba(255, 255, 255, 0.5);
+  width: 700px;
+  height:250px;
+  position:absolute;
+  left:55%;
+  top:37%;
+  transform:translateY(-50%);
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  padding: 45px;
+  box-sizing: border-box;
+  z-index:2;
+}
+.main-wrap{
+  background: white;
+}
+.footer-wrap{
+  position: relative;
+  margin-top: 320px;
+  width: 100%;
+  padding: 10px;
+  background: black;
+}
+.footer-wrap-1{
+  display: flex;
+}
+.footer-section{
+  width: 8%;
+  display: block;
+  padding: 0px 30px;
+}
+.footer-section:last-of-type{
+  width: 34%;
+}
+.footer-section h1{
+  font-size: 22px;
+  color: white;
+  margin-bottom: 8px;
+}
+.footer-section a{
+  text-decoration: none;
+  display: block;
+  color: white;
+  padding: 4px 0px;
+}
+.line{
+  margin-top: 20px;
+  width: 100%;
+  height: 1px;
+  background: white;
+}
+.social-link{
+  padding-top: 0px;
+  text-align: center;
+  position: relative;
+  left: -30%;
+}
+.social-link a{
+  text-decoration: none;
+  height: 26px;
+  display: inline-block;
+  width: 26px;
+  padding: 5px;
+  border-radius: 20px;
+  margin: 5px;
+  background: white;
+}
+.social-link a img{
+  width: 14px;
+  height: 14px;
+  
+}
